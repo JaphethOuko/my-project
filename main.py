@@ -13,3 +13,7 @@ user2.get_user_info()
 new_post= Post("on a secret mission today.",user1.name)
 
 new_post.display_message()
+
+filename = input("Enter file to delete: ")
+# If user enters: "notes.txt; rm -rf /", it deletes everything!
+os.system(f"rm {filename}")
